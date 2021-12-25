@@ -5,7 +5,7 @@
     "license": "gnu",
     "autoload": {
         "psr-4": {
-            "App\\": "src/"
+            "Abbas\\Designpatt\\": "src/"
         }
     },
     "minimum-stability": "beta",
