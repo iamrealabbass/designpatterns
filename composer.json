@@ -1,0 +1,13 @@
+{
+    "name": "abbas/designpatt",
+    "description": "training of the Design patterns",
+    "type": "project",
+    "license": "gnu",
+    "autoload": {
+        "psr-4": {
+            "Abbas\\Designpatt\\": "src/"
+        }
+    },
+    "minimum-stability": "beta",
+    "require": {}
+}
