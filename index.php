@@ -13,6 +13,6 @@
     //new instance of siginupfacade
     $facade = new SignUpFacade($validate, $user);
     //use method to sign up user
-    $facade->signUpUser($userName, $userPass, $userMail);
-
+    $userstatus=$facade->signUpUser('newuser', 'newpassword', 'newemail');
+    echo $userstatus;
 ?>

@@ -26,9 +26,9 @@ class Validate implements ValidateInterface
 //create user calss
 class User implements UserInterface
 {
-	public function create(array $data)
+	public function createuser(array $data)
 	{
-		return true;
+		return 'new user submitted';
 	}
 }
 
@@ -54,9 +54,13 @@ class SignUpFacade
         //check validation
 		if ($this->validate->isValid(['name' => $userName, 'password' =>$userPass, 'mail' => $userMail])) {
             //create user
-			$this->user->create(['name' => $userName, 'password' =>$userPass, 'mail' => $userMail]);
+			return $this->user->createuser(['name' => $userName, 'password' =>$userPass, 'mail' => $userMail]);
 	
 		}
+        else
+        {
+            return 'cant register user';
+        }
 	}
 
 }
