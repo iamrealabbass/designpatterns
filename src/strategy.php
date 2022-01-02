@@ -38,8 +38,9 @@
             return $this->price = $userprice->CalcPrice($this->price);
         }
     }
- 
-$newprice = new NewPrice($userprc);
+
+    $newprice = new NewPrice(5000);
+
 
 if(true) {
     /*veicle is motor */
