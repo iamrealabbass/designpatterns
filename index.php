@@ -6,6 +6,7 @@
     //require classes
     require './src/strategy.php';
     require './src/facade.php';
+    require './src/singlton.php';
 
     // Create instance of classes
     $validate = new Validate();
